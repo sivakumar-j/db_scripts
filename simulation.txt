@@ -1,0 +1,21 @@
+drop table tableb;
+
+
+
+create table tableb(accno number(10),txndt date,balance number(10,2));
+
+--ex: op : 11-03-oct-200, 33-05-oct-400
+
+insert into tableb values (11,to_date('01-OCT-2019','DD-MON-YYYY'),100);
+insert into tableb values (11,to_date('02-OCT-2019','DD-MON-YYYY'),200);
+insert into tableb values (11,to_date('03-OCT-2019','DD-MON-YYYY'),null);
+insert into tableb values (22,to_date('01-OCT-2019','DD-MON-YYYY'),100);
+insert into tableb values (22,to_date('02-OCT-2019','DD-MON-YYYY'),200);
+insert into tableb values (22,to_date('03-OCT-2019','DD-MON-YYYY'),300);
+insert into tableb values (33,to_date('01-OCT-2019','DD-MON-YYYY'),100);
+insert into tableb values (33,to_date('02-OCT-2019','DD-MON-YYYY'),200);
+insert into tableb values (33,to_date('03-OCT-2019','DD-MON-YYYY'),300);
+insert into tableb values (33,to_date('04-OCT-2019','DD-MON-YYYY'),400);
+insert into tableb values (33,to_date('05-OCT-2019','DD-MON-YYYY'),null);
+
+select accno,txndt,balance from tableb;
