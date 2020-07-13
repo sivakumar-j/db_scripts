@@ -1,3 +1,8 @@
+
+* Time: During EOD
+* Condition: Update balance with previous day balance if the current day balance is null
+
+
 update tableb b2
 set b2.balance = ( with b3 as ( select b1.accno,b1.txndt,b1.balance,
 nvl(b1.balance,
