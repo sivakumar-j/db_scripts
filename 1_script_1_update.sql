@@ -1,6 +1,6 @@
 
-* Time: During EOD
-* Condition: Update balance with previous day balance if the current day balance is null
+-- Time: During EOD
+-- Condition: Update balance with previous day balance if the current day balance is null
 
 
 update tableb b2
