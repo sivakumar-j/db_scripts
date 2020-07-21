@@ -1,1 +1,1 @@
-# oracle_scripts
+* oracle_scripts
